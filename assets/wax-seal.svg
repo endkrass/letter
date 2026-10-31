@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="104" viewBox="0 0 100 104" fill="none">
+  <defs>
+    <path id="wax" d="M49 6C57 5 60 9 65 9C72 9 75 13 78 18C81 22 88 23 89 30C90 36 87 39 90 45C94 53 91 57 88 62C85 67 87 73 82 78C78 83 72 81 67 85C62 89 58 93 51 91C45 89 40 94 34 90C29 87 27 84 21 83C14 81 14 75 12 70C10 65 5 62 7 55C9 49 5 45 8 39C11 34 9 28 14 24C19 20 20 14 27 13C34 13 37 7 43 8C45 8 47 6 49 6Z"/>
+    <radialGradient id="body" cx=".33" cy=".24" r=".8"><stop stop-color="#9ba27b"/><stop offset=".35" stop-color="#777f58"/><stop offset=".72" stop-color="#596141"/><stop offset="1" stop-color="#3b432d"/></radialGradient>
+    <linearGradient id="edge" x1="22" y1="10" x2="74" y2="89" gradientUnits="userSpaceOnUse"><stop stop-color="#b7bd96"/><stop offset=".32" stop-color="#7f8961"/><stop offset=".65" stop-color="#454e30"/><stop offset="1" stop-color="#303923"/></linearGradient>
+    <radialGradient id="impression" cx=".64" cy=".85" r=".95"><stop stop-color="#8a9269"/><stop offset=".65" stop-color="#6c754e"/><stop offset="1" stop-color="#485234"/></radialGradient>
+    <linearGradient id="rim" x1="27" y1="17" x2="72" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#d1d4ad" stop-opacity=".85"/><stop offset=".3" stop-color="#a3ad7d" stop-opacity=".45"/><stop offset=".6" stop-color="#414b2e" stop-opacity=".7"/><stop offset="1" stop-color="#bec497" stop-opacity=".6"/></linearGradient>
+    <filter id="texture" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".38" numOctaves="3" seed="7"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".15"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"/><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+    <filter id="pressed" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx=".65" dy=".9" stdDeviation=".25" flood-color="#c4cba0" flood-opacity=".7"/></filter>
+    <clipPath id="outline"><use href="#wax"/></clipPath>
+  </defs>
+  <!-- The lower cast edge is thicker than the lit upper edge. -->
+  <use href="#wax" transform="translate(0 2.1)" fill="#353e27"/>
+  <g filter="url(#texture)">
+    <use href="#wax" fill="url(#body)" stroke="url(#edge)" stroke-width="1.6"/>
+    <g clip-path="url(#outline)" stroke-linecap="round">
+      <path d="M13 38Q11 28 23 23M29 17Q35 14 39 13M53 10Q62 12 65 14M81 26Q87 31 84 37" stroke="#d0d4aa" stroke-opacity=".42" stroke-width="1.5"/>
+      <path d="M12 55Q9 61 15 66M28 82Q34 87 40 86M65 84Q73 77 80 77M87 49Q90 56 84 62" stroke="#323c24" stroke-opacity=".4" stroke-width="1.5"/>
+      <path d="M23 32 19 28M31 24 29 19M43 20 42 13M67 25 72 21M78 39 85 37M77 63 83 67M65 76 68 82M31 76 27 81M21 61 15 64" stroke="#414c30" stroke-opacity=".25" stroke-width=".7"/>
+      <ellipse cx="49" cy="49" rx="31.5" ry="32.3" transform="rotate(-9 49 49)" fill="url(#impression)" stroke="#455032" stroke-width="1.6"/>
+      <ellipse cx="49" cy="49" rx="32.7" ry="33.5" transform="rotate(-9 49 49)" stroke="url(#rim)" stroke-width="1.8"/>
+      <ellipse cx="49" cy="49" rx="28.2" ry="29" stroke="#b0b88a" stroke-opacity=".28" stroke-width=".65"/>
+      <path d="M27 29Q41 13 59 21" stroke="#d5d9b3" stroke-opacity=".35" stroke-width=".85"/>
+      <path d="M25 69Q44 87 66 73" stroke="#c7cda0" stroke-opacity=".28" stroke-width="1.1"/>
+    </g>
+  </g>
+  <!-- Same-color intaglio: dark cut faces with a small lower light edge. -->
+  <g transform="rotate(-9 49 49)" filter="url(#pressed)" fill="#414d30">
+    <path d="M28 36H48L48.5 42H47.6C46.7 38.2 45.5 37.2 40 37.2V59.5C40 61.5 41 61.8 43.5 62V63H32.5V62C35 61.8 36 61.5 36 59.5V37.2C30.5 37.2 29.3 38.2 28.4 42H27.5Z"/>
+    <path d="M49 36H68L68.4 42H67.5C66.4 38.2 65.5 37.2 59.8 37.2H56.5V48H59.8C63.2 48 63.8 47.5 64.3 44.8H65.2V52.8H64.3C63.8 50 63.2 49.4 59.8 49.4H56.5V59.7C56.5 61.4 57.2 61.7 60 61.7C66.5 61.7 67.8 60.4 69.2 56.4H70.1L68.7 63H49V62C51.5 61.8 52.5 61.5 52.5 59.5V39.5C52.5 37.5 51.5 37.2 49 37Z"/>
+    <path d="m47 69 2-2 2 2-2 2Z"/>
+  </g>
+  <g fill="#d0d5ac" opacity=".26"><ellipse cx="20" cy="32" rx="1" ry="1.9" transform="rotate(36 20 32)"/><ellipse cx="72" cy="74" rx="1.8" ry=".7" transform="rotate(-32 72 74)"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="260" viewBox="0 0 430 260" fill="none">
+  <defs>
+    <linearGradient id="left" x1="0" y1="70" x2="241" y2="207" gradientUnits="userSpaceOnUse"><stop stop-color="#f5f0e3"/><stop offset=".75" stop-color="#e5ddcb"/><stop offset="1" stop-color="#d8cfbb"/></linearGradient>
+    <linearGradient id="right" x1="430" y1="38" x2="203" y2="208" gradientUnits="userSpaceOnUse"><stop stop-color="#eee7d8"/><stop offset=".8" stop-color="#e3dac7"/><stop offset="1" stop-color="#d1c7b1"/></linearGradient>
+    <linearGradient id="bottom" x1="148" y1="133" x2="247" y2="306" gradientUnits="userSpaceOnUse"><stop stop-color="#f8f3e7"/><stop offset=".46" stop-color="#efe8d9"/><stop offset="1" stop-color="#e1d7c2"/></linearGradient>
+    <linearGradient id="seam" x1="215" y1="135" x2="215" y2="260" gradientUnits="userSpaceOnUse"><stop stop-color="#8c7957" stop-opacity=".24"/><stop offset="1" stop-color="#8c7957" stop-opacity="0"/></linearGradient>
+    <filter id="fibre" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".78" numOctaves="3" stitchTiles="stitch" seed="12"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".1"/></feComponentTransfer></filter>
+    <clipPath id="body"><rect x=".5" y=".5" width="429" height="259" rx="2"/></clipPath>
+    <filter id="lift" x="-10%" y="-15%" width="120%" height="140%"><feDropShadow dx="0" dy="-1" stdDeviation="1.5" flood-color="#6c5837" flood-opacity=".17"/></filter>
+  </defs>
+  <g clip-path="url(#body)">
+    <path d="M0 0 239 157 0 260Z" fill="url(#left)"/>
+    <path d="M430 0 191 157 430 260Z" fill="url(#right)"/>
+    <path d="m0 1 239 157M430 1 191 158" stroke="#fffdf6" stroke-opacity=".65" stroke-width="1.1"/>
+    <path d="M0 260V257L203 131Q215 124 227 131L430 257V260Z" fill="url(#bottom)" filter="url(#lift)"/>
+    <path d="M1 257 204 132Q215 125 226 132L429 257" stroke="#fffcf3" stroke-opacity=".88" stroke-width="1.2"/>
+    <path d="m1 258 203-126q11-7 22 0l203 126" stroke="url(#seam)" stroke-width=".55"/>
+    <rect width="430" height="260" filter="url(#fibre)" style="mix-blend-mode:multiply"/>
+    <path d="M1 3V257Q1 259 3 259H427Q429 259 429 257V3" stroke="#a89879" stroke-opacity=".28"/>
+    <path d="M2 3V256M3 258H426" stroke="#fffdf5" stroke-opacity=".65"/>
+  </g>
+</svg>
